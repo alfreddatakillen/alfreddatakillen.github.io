@@ -80,10 +80,9 @@ function saveFaktor(faktor, value) {
 
     console.log({ faktor0, faktor1, produkten })
     if (faktor0 * faktor1 === produkten) {
+    	delete tabeller[produkten];
         setTimeout(nyttNr, 2000);
     }
-
-    delete tabeller[produkten];
 }
 
 function calculatePoints() {
